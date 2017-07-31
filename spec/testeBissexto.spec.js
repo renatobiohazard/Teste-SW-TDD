@@ -15,5 +15,8 @@ describe("O ano não é bissexto pois", function() {
   it("não é divisível por 100.", function() {
     expect(false).toBe(teste.ehBissexto(1400));
   });
+  it("é divisível por 100.", function() {
+    expect(true).toBe(teste.ehBissexto(1404));
+  });
 
 });
