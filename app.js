@@ -1,12 +1,13 @@
 // app.js
 module.exports = {
 
-  // segunda condição
+  // terceira condição
   ehBissexto: function(ano) {
-    if (ano % 4 == 0 && ano % 100 != 0) {
+    if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0) {
       return true;
     } else {
       return false;
     }
   }
+
 };
