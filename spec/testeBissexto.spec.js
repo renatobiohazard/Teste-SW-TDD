@@ -8,7 +8,7 @@ describe("O ano não é bissexto pois", function() {
     expect(true).toBe(teste.ehBissexto(4));
   });
   it("é divisível por 4.", function() {
-    expect(true).toBe(teste.ehBissexto(5));
+    expect(false).toBe(teste.ehBissexto(5));
   });
 
   // SEGUNDO CASO
@@ -16,7 +16,7 @@ describe("O ano não é bissexto pois", function() {
     expect(false).toBe(teste.ehBissexto(1400));
   });
   it("é divisível por 100.", function() {
-    expect(false).toBe(teste.ehBissexto(1404));
+    expect(true).toBe(teste.ehBissexto(1404));
   });
 
   // TERCEIRO CASO
@@ -24,7 +24,7 @@ describe("O ano não é bissexto pois", function() {
     expect(false).toBe(teste.ehBissexto(1601));
   });
   it("é divisível por 400.", function() {
-    expect(false).toBe(teste.ehBissexto(1600));
+    expect(true).toBe(teste.ehBissexto(1600));
   });
 
 
